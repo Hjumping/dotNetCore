@@ -1,0 +1,29 @@
+﻿@model IEnumerable<WebApplication1.Model.Student>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>学生信息</title>
+</head>
+<body>
+    <h2>学生信息</h2>
+
+    <table>
+        <tbody>
+            @foreach (var m in Model)
+            {
+            <tr>
+                <td>
+                    @m.Id
+                </td>
+                <td>
+                    @m.Name
+                </td>
+                <td>
+                    @m.ClassName
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
